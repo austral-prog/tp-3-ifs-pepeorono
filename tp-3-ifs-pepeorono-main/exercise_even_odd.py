@@ -1,21 +1,7 @@
 def even_odd():
-    """
-    Ejercicio 2 - Par o Impar
+    numero = int(input())
 
-    Leer un número entero mediante input(). Determinar si el número es par o impar
-    e imprimir el resultado correspondiente.
-
-    Ejemplo:
-        Para la entrada "8", la salida esperada es:
-        El numero 8 es par
-
-        Para la entrada "7", la salida esperada es:
-        El numero 7 es impar
-    """
-    num = int(input("Ingrese un numero: "))
-    if num % 2 == 0:
-        print(f"El numero {num} es par")
+    if numero % 2 == 0:
+        print(f"El numero {numero} es par")
     else:
-        print(f"El numero {num} es impar")
-
-#even_odd()
+        print(f"El numero {numero} es impar")

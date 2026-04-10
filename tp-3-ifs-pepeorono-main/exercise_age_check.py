@@ -1,30 +1,10 @@
 def age_check():
-    """
-    Ejercicio 3 - Verificar Mayoría de Edad
+    edad = int(input())
+    limite = int(input())
 
-    Leer una edad y un límite de edad mediante input(). Verificar que ambos números sean
-    válidos (positivos), y luego determinar si la persona es mayor de edad comparando
-    con el límite ingresado.
-
-    Si alguno de los números es negativo o cero, imprimir "Entrada invalida".
-
-    Ejemplo:
-        Para las entradas "20" y "18", la salida esperada es:
-        Eres mayor de edad
-
-        Para las entradas "16" y "18", la salida esperada es:
-        Eres menor de edad
-
-        Para las entradas "-5" y "18", la salida esperada es:
-        Entrada invalida
-    """
-    edad = int(input("Ingrese edad: "))
-    edadl = int(input("Ingrese edad limite: "))
-    if edad < 0 or edadl < 0:
+    if edad <= 0 or limite <= 0:
         print("Entrada invalida")
+    elif edad >= limite:
+        print("Eres mayor de edad")
     else:
-        if edad > edadl:
-            print("Eres mayor de edad")
-        else:
-            print("Eres menor de edad")
-age_check()
+        print("Eres menor de edad")
